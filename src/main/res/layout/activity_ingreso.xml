@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.login.Ingreso">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txvProyecto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/audiowide"
+                android:text="@string/nombre"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/txvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txthora"
+                android:layout_below="@+id/txvProyecto"
+                android:layout_marginTop="39dp"
+                android:text="ID : "
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edvid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txvid"
+                android:layout_alignBottom="@+id/txvid"
+                android:layout_marginStart="7dp"
+                android:layout_toEndOf="@+id/txvid"
+                android:ems="2"
+                android:enabled="false"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txthora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edvid"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/horas"
+                android:textAllCaps="true"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/edhora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txthora"
+                android:layout_alignBottom="@+id/txthora"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/txthora"
+                android:ems="5"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/txtdescrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/edhora"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="40dp"
+                android:text="Decripcion: "
+                android:textAllCaps="true"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/eddescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|start"
+                android:layout_below="@+id/txtdescrip"
+                android:hint="Descripcion..."
+                android:lines="6"
+                android:textSize="14dp"
+                android:padding="40dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+            <Button
+                android:id="@+id/enviar"
+                android:layout_width="300sp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/eddescrip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Enviar"
+                style="?android:textAppearanceSmall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:backgroundTint="@android:color/white" />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
